@@ -2,7 +2,7 @@
 
 A world-class fintech dashboard with premium Apple-inspired UI/UX.
 
-## ✨ Features
+##  Features
 
 - **Landing Page** — Cinematic hero, floating cards, animated stats, feature grid
 - **Authentication** — Login/Register with Google auth, animated forms
@@ -17,7 +17,7 @@ A world-class fintech dashboard with premium Apple-inspired UI/UX.
 - **Alerts** — Price and technical level alert management
 - **Settings** — Full settings with profile, security, notifications, billing
 
-## 🚀 Quick Start
+##  Quick Start
 
 No build step required — pure HTML/CSS/JS.
 
@@ -64,14 +64,14 @@ apex-finance/
 └── app.js                     # Router & app init
 ```
 
-## 🎨 Design System
+##  Design System
 
 - **Colors:** Pure black (#000) background, white text, blue (#2563ff) accents
 - **Typography:** DM Sans (UI) + DM Mono (numbers/code)
 - **Components:** Glassmorphism cards, live badges, animated charts
 - **Animations:** Fade-up reveals, counter animations, live price flashes
 
-## 🔌 To Connect Real Data
+##  To Connect Real Data
 
 Replace mock data in `src/data/mockData.js` with API calls:
 
