@@ -1,0 +1,53 @@
+/* ===== ADDITIONAL COMPONENT OVERRIDES ===== */
+/* Extend or override any styles here */
+
+/* HEATMAP */
+.heatmap-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; padding: 16px; }
+.heatmap-cell {
+  aspect-ratio: 1; border-radius: 4px; display: flex; align-items: center; justify-content: center;
+  font-size: 9px; font-family: var(--mono); font-weight: 600; cursor: pointer; transition: opacity 0.15s;
+}
+.heatmap-cell:hover { opacity: 0.8; }
+
+/* CANDLESTICK */
+.candle-body { cursor: pointer; }
+.candle-wick { stroke-width: 1; }
+
+/* PORTFOLIO ALLOCATION */
+.alloc-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.alloc-bar-wrap { flex: 1; height: 4px; background: var(--bg4); border-radius: 4px; overflow: hidden; }
+.alloc-bar { height: 100%; border-radius: 4px; transition: width 0.8s cubic-bezier(0.4,0,0.2,1); }
+.alloc-sym { font-size: 12px; font-weight: 600; width: 40px; font-family: var(--mono); }
+.alloc-pct { font-size: 11px; color: var(--text3); width: 36px; text-align: right; font-family: var(--mono); }
+.alloc-val { font-size: 11px; color: var(--text2); width: 80px; text-align: right; font-family: var(--mono); }
+
+/* TRANSACTION TABLE */
+.tx-table { width: 100%; border-collapse: collapse; }
+.tx-table th { font-size: 9px; color: var(--text3); letter-spacing: 1px; font-weight: 600; padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+.tx-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); font-size: 12px; }
+.tx-table tr:last-child td { border-bottom: none; }
+.tx-table tr:hover td { background: rgba(255,255,255,0.015); }
+.tx-type { font-size: 9px; font-weight: 600; font-family: var(--mono); padding: 2px 8px; border-radius: 4px; }
+.tx-buy { background: var(--green2); color: var(--green); }
+.tx-sell { background: var(--red2); color: var(--red); }
+
+/* ALERT BELL BADGE */
+.alert-bell { position: relative; }
+.alert-badge-dot {
+  position: absolute; top: -2px; right: -2px; width: 8px; height: 8px;
+  background: var(--red); border-radius: 50%; border: 2px solid var(--bg);
+}
+
+/* EMPTY STATE */
+.empty-state {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 60px 20px; text-align: center;
+}
+.empty-icon { font-size: 40px; margin-bottom: 16px; opacity: 0.3; }
+.empty-title { font-size: 15px; font-weight: 500; margin-bottom: 8px; }
+.empty-sub { font-size: 13px; color: var(--text3); max-width: 280px; line-height: 1.6; }
+
+/* MOBILE HAMBURGER */
+.hamburger { display: none; flex-direction: column; gap: 4px; cursor: pointer; padding: 8px; }
+.hamburger span { display: block; width: 18px; height: 1.5px; background: var(--text2); border-radius: 2px; transition: var(--transition); }
+@media (max-width: 768px) { .hamburger { display: flex; } }
